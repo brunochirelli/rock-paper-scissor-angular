@@ -1,5 +1,10 @@
 <h1>Escolha sua opção</h1>
 
-<button>Rock</button>
-<button>Paper</button>
-<button>Scissor</button>
+<h1>{{ winner$ | async }}</h1>
+
+<section>
+  <button (click)="setPlayerOption('rock')">Rock</button>
+  <button (click)="setPlayerOption('paper')">Paper</button>
+  <button (click)="setPlayerOption('scissor')">Scissor</button>
+  <div><button (click)="play()">Jogar</button></div>
+</section>
